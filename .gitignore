@@ -194,3 +194,6 @@ UpgradeLog*.htm
 
 # Microsoft Fakes
 FakesAssemblies/
+
+# Github pages dir
+html/
