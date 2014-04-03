@@ -14,6 +14,6 @@ var class_image_lib_1_1_image_r_g_b =
     [ "channels", "class_image_lib_1_1_image_r_g_b.html#ad233f91f2e4925ef07eb9a1a7783a1be", null ],
     [ "data", "class_image_lib_1_1_image_r_g_b.html#a1914a7464717239ca55a15b709b0f6d7", null ],
     [ "data", "class_image_lib_1_1_image_r_g_b.html#a2a845eb3075132fa28344afbd0e06c06", null ],
-    [ "data", "class_image_lib_1_1_image_r_g_b.html#a36580ec6b2e88325116db92529fdbdcd", null ],
-    [ "data", "class_image_lib_1_1_image_r_g_b.html#a38692141a52d32673b15ece92565d642", null ]
+    [ "data", "class_image_lib_1_1_image_r_g_b.html#a24f130b42d9417ffdbd457e3e59c108b", null ],
+    [ "data", "class_image_lib_1_1_image_r_g_b.html#a32a8c5a026cef652fe979055a6feba7f", null ]
 ];

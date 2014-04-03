@@ -101,19 +101,31 @@ $(document).ready(function(){initNavTree('_image_r_g_b_8h-example.html','');});
 </div><!--header-->
 <div class="contents">
 <pre class="fragment">std::unique_ptr&lt;ImageRGB&gt; img = loadImg("example.jpg");
-</pre><p>various ways to set pixel in fifth column, second row, red channel to 255 </p>
+</pre><p>various ways to set pixel in fifth column, second row, red channel to 255: </p>
 <pre class="fragment">img-&gt;at(5, 2, Channel::Red) = 255;
 </pre><p>or </p>
 <pre class="fragment">img-&gt;at(5, 2).red = 255;
-</pre><p>or with pointers </p>
+</pre><p>with pointers: </p>
 <pre class="fragment"> (img-&gt;data(5, 2).red) = 255;
 </pre><p>or </p>
-<pre class="fragment"> img-&gt;data(5, 2, Channel::Red) = 255;</pre><div class="fragment"></div><!-- fragment --> </div><!-- contents -->
+<pre class="fragment"> img-&gt;data(5, 2, Channel::Red) = 255;
+</pre><p>Convert image to grayscale: </p>
+<pre class="fragment">ImageGray grayImg(img.width(), img.height());
+
+auto rgb_ptrs = img-&gt;data();
+
+for (auto i : grayImg) {
+    i = (*rgb_ptrs.red * 0.21) + (*rgb_ptrs.blue * 0.71) + (*rgb_ptrs.green * 0.07);
+
+    rgb_ptrs.red++;
+    rgb_ptrs.green++;
+    rgb_ptrs.blue++;
+</pre><div class="fragment"></div><!-- fragment --> </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Apr 3 2014 14:13:02 for ImageLib by
+    <li class="footer">Generated on Thu Apr 3 2014 14:37:30 for ImageLib by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

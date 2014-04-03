@@ -3,7 +3,7 @@ var class_image_lib_1_1_image =
     [ "const_iterator", "class_image_lib_1_1_image.html#a88c178d4a9c710ae54629312e41feb1b", null ],
     [ "iterator", "class_image_lib_1_1_image.html#affcbe6719d6f374974e3014e571ad72f", null ],
     [ "Image", "class_image_lib_1_1_image.html#aed7e04d0a1e5d8a8b19a0140e08d2c8d", null ],
-    [ "Image", "class_image_lib_1_1_image.html#a24f9ab8cafb99a4753f72ec7ec09d49c", null ],
+    [ "Image", "class_image_lib_1_1_image.html#a7fd1b4e8a076b989c1fe618f80edcc11", null ],
     [ "Image", "class_image_lib_1_1_image.html#ab08cf6f50e31a3fa2a39ebec6feeaeee", null ],
     [ "~Image", "class_image_lib_1_1_image.html#a4f9ca29413e7299011becb21efe517e3", null ],
     [ "begin", "class_image_lib_1_1_image.html#a0e8e8e1630023b2d844f0b74eaaff913", null ],

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['image',['Image',['../class_image_lib_1_1_image.html',1,'ImageLib']]],
-  ['image',['Image',['../class_image_lib_1_1_image.html#aed7e04d0a1e5d8a8b19a0140e08d2c8d',1,'ImageLib::Image::Image(unsigned int width, unsigned int height, int numChannels)'],['../class_image_lib_1_1_image.html#a24f9ab8cafb99a4753f72ec7ec09d49c',1,'ImageLib::Image::Image(unsigned int width, unsigned int height, const std::vector&lt; unsigned char &gt; &amp;data)'],['../class_image_lib_1_1_image.html#ab08cf6f50e31a3fa2a39ebec6feeaeee',1,'ImageLib::Image::Image(unsigned int width, unsigned int height, int numChannels, const unsigned char *data)']]],
+  ['image',['Image',['../class_image_lib_1_1_image.html#aed7e04d0a1e5d8a8b19a0140e08d2c8d',1,'ImageLib::Image::Image(unsigned int width, unsigned int height, int numChannels)'],['../class_image_lib_1_1_image.html#a7fd1b4e8a076b989c1fe618f80edcc11',1,'ImageLib::Image::Image(unsigned int width, unsigned int height, int numChannels, const std::vector&lt; unsigned char &gt; &amp;data)'],['../class_image_lib_1_1_image.html#ab08cf6f50e31a3fa2a39ebec6feeaeee',1,'ImageLib::Image::Image(unsigned int width, unsigned int height, int numChannels, const unsigned char *data)']]],
   ['image_2ecpp',['Image.cpp',['../_image_8cpp.html',1,'']]],
   ['image_2eh',['Image.h',['../_image_8h.html',1,'']]],
   ['imagegray',['ImageGray',['../class_image_lib_1_1_image_gray.html',1,'ImageLib']]],
