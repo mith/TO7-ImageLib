@@ -69,7 +69,7 @@ namespace ImageLib
 		return *ptr;
 	}
 
-	unsigned char ImageRGB::at(unsigned int x, unsigned int y, Channel channel) const
+	const unsigned char & ImageRGB::at(unsigned int x, unsigned int y, Channel channel) const
 	{
 		auto ptr = data(x, y, channel);
 

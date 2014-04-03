@@ -21,10 +21,22 @@ namespace ImageLib
 		typedef std::vector<unsigned char>::iterator iterator;
 		typedef std::vector<unsigned char>::const_iterator const_iterator;
 
+		/**
+		The width of the image
+		*/
 		inline unsigned int width() const { return width_; }
+		/**
+		The height of the image
+		*/
 		inline unsigned int height() const { return height_; }
+		/**
+		The size in bytes of the imagedata
+		*/
 		inline size_t size() const { return data_.size(); }
 
+		/**
+		The amount of channels an image has
+		*/
 		virtual int channels() const = 0;
 
 		iterator begin() { return data_.begin(); }

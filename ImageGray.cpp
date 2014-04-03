@@ -35,7 +35,7 @@ namespace ImageLib
 		return *(data_.data() + x + y * width());
 	}
 
-	unsigned char ImageGray::at(unsigned int x, unsigned int y) const
+	const unsigned char & ImageGray::at(unsigned int x, unsigned int y) const
 	{
 		return *(data_.data() + x + y * width());
 	}

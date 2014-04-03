@@ -19,4 +19,18 @@ namespace ImageLib
 
 		return std::make_unique<ImageRGB>(cimg.width(), cimg.height(), cimg.begin());
 	}
+
+	void saveImg(const ImageGray & img, const std::string filename)
+	{
+		CImg<unsigned char> cimg(img.data(), img.width(), img.height(), 1, 1);
+
+		cimg.save(filename.c_str());
+	}
+
+	void saveImg(const ImageRGB & img, const std::string filename)
+	{
+		CImg<unsigned char> cimg(img.data(0, 0, Channel::Red), img.width(), img.height(), 1, 3);
+
+		cimg.save(filename.c_str());
+	}
 }

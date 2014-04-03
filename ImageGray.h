@@ -22,6 +22,6 @@ namespace ImageLib
 		Get reference to pixel at (x,y)
 		*/
 		unsigned char & at(unsigned int x, unsigned int y);
-		unsigned char at(unsigned int x, unsigned int y) const;
+		const unsigned char & at(unsigned int x, unsigned int y) const;
 	};
 }
