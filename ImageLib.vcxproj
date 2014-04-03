@@ -75,6 +75,7 @@
   <ItemGroup>
     <ClInclude Include="Image.h" />
     <ClInclude Include="ImageGray.h" />
+    <ClInclude Include="ImageLib.h" />
     <ClInclude Include="ImageLoader.h" />
     <ClInclude Include="ImageRGB.h" />
   </ItemGroup>

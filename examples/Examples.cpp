@@ -1,4 +1,4 @@
-#include "../ImageLoader.h"
+#include "../ImageLib.h"
 using namespace ImageLib;
 
 void setPixel() {
