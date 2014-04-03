@@ -44,8 +44,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
+      <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -92,7 +94,7 @@ $(document).ready(function(){initNavTree('class_image_lib_1_1_image_r_g_b.html',
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -110,6 +112,8 @@ $(document).ready(function(){initNavTree('class_image_lib_1_1_image_r_g_b.html',
 <div class="title">ImageLib::ImageRGB Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_image_r_g_b_8h_source.html">ImageRGB.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ImageLib::ImageRGB:</div>
 <div class="dyncontent">
@@ -122,111 +126,258 @@ Inheritance diagram for ImageLib::ImageRGB:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a18c96e6d77f5590d840934db5132eb9d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a18c96e6d77f5590d840934db5132eb9d"></a>
-typedef <a class="el" href="struct_image_lib_1_1_rgb.html">Rgb</a>&lt; unsigned char &amp; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>reference</b></td></tr>
+<tr class="memitem:a18c96e6d77f5590d840934db5132eb9d"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_image_lib_1_1_rgb.html">Rgb</a>&lt; unsigned char &amp; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_lib_1_1_image_r_g_b.html#a18c96e6d77f5590d840934db5132eb9d">reference</a></td></tr>
 <tr class="separator:a18c96e6d77f5590d840934db5132eb9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca01f69a4d3b9d9bf22be50335552743"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca01f69a4d3b9d9bf22be50335552743"></a>
-typedef <a class="el" href="struct_image_lib_1_1_rgb.html">Rgb</a>&lt; const unsigned <br class="typebreak"/>
-char &amp; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>const_reference</b></td></tr>
-<tr class="separator:aca01f69a4d3b9d9bf22be50335552743"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86e3c917a684211d191b795805627d5a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86e3c917a684211d191b795805627d5a"></a>
-typedef <a class="el" href="struct_image_lib_1_1_rgb.html">Rgb</a>&lt; unsigned char * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>pointer</b></td></tr>
+<tr class="memitem:adfc42fd0ba651b42d780ccf63aa534d1"><td class="memItemLeft" align="right" valign="top">typedef const <a class="el" href="struct_image_lib_1_1_rgb.html">Rgb</a>&lt; const <br class="typebreak"/>
+unsigned char &amp; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_lib_1_1_image_r_g_b.html#adfc42fd0ba651b42d780ccf63aa534d1">const_reference</a></td></tr>
+<tr class="separator:adfc42fd0ba651b42d780ccf63aa534d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86e3c917a684211d191b795805627d5a"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_image_lib_1_1_rgb.html">Rgb</a>&lt; unsigned char * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_lib_1_1_image_r_g_b.html#a86e3c917a684211d191b795805627d5a">pointer</a></td></tr>
 <tr class="separator:a86e3c917a684211d191b795805627d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f4ee27000bbe0fa793cd46464e047ea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f4ee27000bbe0fa793cd46464e047ea"></a>
-typedef <a class="el" href="struct_image_lib_1_1_rgb.html">Rgb</a>&lt; const unsigned <br class="typebreak"/>
-char * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>const_pointer</b></td></tr>
-<tr class="separator:a8f4ee27000bbe0fa793cd46464e047ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb593bd4c0e1b994da3a0e9ec305005b"><td class="memItemLeft" align="right" valign="top">typedef const <a class="el" href="struct_image_lib_1_1_rgb.html">Rgb</a>&lt; const <br class="typebreak"/>
+unsigned char * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_lib_1_1_image_r_g_b.html#afb593bd4c0e1b994da3a0e9ec305005b">const_pointer</a></td></tr>
+<tr class="separator:afb593bd4c0e1b994da3a0e9ec305005b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_class_image_lib_1_1_image"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_image_lib_1_1_image')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_image_lib_1_1_image.html">ImageLib::Image</a></td></tr>
-<tr class="memitem:affcbe6719d6f374974e3014e571ad72f inherit pub_types_class_image_lib_1_1_image"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="affcbe6719d6f374974e3014e571ad72f"></a>
-typedef std::vector&lt; unsigned <br class="typebreak"/>
-char &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b></td></tr>
+<tr class="memitem:affcbe6719d6f374974e3014e571ad72f inherit pub_types_class_image_lib_1_1_image"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; unsigned <br class="typebreak"/>
+char &gt;::<a class="el" href="class_image_lib_1_1_image.html#affcbe6719d6f374974e3014e571ad72f">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_lib_1_1_image.html#affcbe6719d6f374974e3014e571ad72f">iterator</a></td></tr>
 <tr class="separator:affcbe6719d6f374974e3014e571ad72f inherit pub_types_class_image_lib_1_1_image"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88c178d4a9c710ae54629312e41feb1b inherit pub_types_class_image_lib_1_1_image"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a88c178d4a9c710ae54629312e41feb1b"></a>
-typedef std::vector&lt; unsigned <br class="typebreak"/>
-char &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>const_iterator</b></td></tr>
+<tr class="memitem:a88c178d4a9c710ae54629312e41feb1b inherit pub_types_class_image_lib_1_1_image"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; unsigned <br class="typebreak"/>
+char &gt;::<a class="el" href="class_image_lib_1_1_image.html#a88c178d4a9c710ae54629312e41feb1b">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_lib_1_1_image.html#a88c178d4a9c710ae54629312e41feb1b">const_iterator</a></td></tr>
 <tr class="separator:a88c178d4a9c710ae54629312e41feb1b inherit pub_types_class_image_lib_1_1_image"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2dc4b11b7d6b593c9a4c6c9610ec2081"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2dc4b11b7d6b593c9a4c6c9610ec2081"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ImageRGB</b> (unsigned int width, unsigned int height)</td></tr>
+<tr class="memitem:a2dc4b11b7d6b593c9a4c6c9610ec2081"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_lib_1_1_image_r_g_b.html#a2dc4b11b7d6b593c9a4c6c9610ec2081">ImageRGB</a> (unsigned int <a class="el" href="class_image_lib_1_1_image.html#a0e6fd9396015ff805b9f5beb54adb162">width</a>, unsigned int <a class="el" href="class_image_lib_1_1_image.html#a27e5d47e79a4b4b09d1bb122f5e2dd0d">height</a>)</td></tr>
 <tr class="separator:a2dc4b11b7d6b593c9a4c6c9610ec2081"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a014ccd9cf06cb923665e41ff351f07f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a014ccd9cf06cb923665e41ff351f07f1"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ImageRGB</b> (unsigned int width, unsigned int height, const std::vector&lt; unsigned char &gt; &amp;<a class="el" href="class_image_lib_1_1_image_r_g_b.html#a1914a7464717239ca55a15b709b0f6d7">data</a>)</td></tr>
+<tr class="memitem:a014ccd9cf06cb923665e41ff351f07f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_lib_1_1_image_r_g_b.html#a014ccd9cf06cb923665e41ff351f07f1">ImageRGB</a> (unsigned int <a class="el" href="class_image_lib_1_1_image.html#a0e6fd9396015ff805b9f5beb54adb162">width</a>, unsigned int <a class="el" href="class_image_lib_1_1_image.html#a27e5d47e79a4b4b09d1bb122f5e2dd0d">height</a>, const std::vector&lt; unsigned char &gt; &amp;<a class="el" href="class_image_lib_1_1_image_r_g_b.html#a1914a7464717239ca55a15b709b0f6d7">data</a>)</td></tr>
 <tr class="separator:a014ccd9cf06cb923665e41ff351f07f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d632670e1174bb0076db7fcf57f5299"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9d632670e1174bb0076db7fcf57f5299"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ImageRGB</b> (unsigned int width, unsigned int height, const unsigned char *<a class="el" href="class_image_lib_1_1_image_r_g_b.html#a1914a7464717239ca55a15b709b0f6d7">data</a>)</td></tr>
+<tr class="memitem:a9d632670e1174bb0076db7fcf57f5299"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_lib_1_1_image_r_g_b.html#a9d632670e1174bb0076db7fcf57f5299">ImageRGB</a> (unsigned int <a class="el" href="class_image_lib_1_1_image.html#a0e6fd9396015ff805b9f5beb54adb162">width</a>, unsigned int <a class="el" href="class_image_lib_1_1_image.html#a27e5d47e79a4b4b09d1bb122f5e2dd0d">height</a>, const unsigned char *<a class="el" href="class_image_lib_1_1_image_r_g_b.html#a1914a7464717239ca55a15b709b0f6d7">data</a>)</td></tr>
 <tr class="separator:a9d632670e1174bb0076db7fcf57f5299"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad233f91f2e4925ef07eb9a1a7783a1be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad233f91f2e4925ef07eb9a1a7783a1be"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>channels</b> () const </td></tr>
+<tr class="memitem:ad233f91f2e4925ef07eb9a1a7783a1be"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_lib_1_1_image_r_g_b.html#ad233f91f2e4925ef07eb9a1a7783a1be">channels</a> () const </td></tr>
 <tr class="separator:ad233f91f2e4925ef07eb9a1a7783a1be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1914a7464717239ca55a15b709b0f6d7"><td class="memItemLeft" align="right" valign="top">unsigned char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_lib_1_1_image_r_g_b.html#a1914a7464717239ca55a15b709b0f6d7">data</a> (unsigned int x, unsigned int y, Channel channel)</td></tr>
+<tr class="memitem:a1914a7464717239ca55a15b709b0f6d7"><td class="memItemLeft" align="right" valign="top">unsigned char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_lib_1_1_image_r_g_b.html#a1914a7464717239ca55a15b709b0f6d7">data</a> (unsigned int x, unsigned int y, <a class="el" href="namespace_image_lib.html#a9a33be44253b1872f4c3244b758dc995">Channel</a> channel)</td></tr>
 <tr class="separator:a1914a7464717239ca55a15b709b0f6d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a845eb3075132fa28344afbd0e06c06"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a845eb3075132fa28344afbd0e06c06"></a>
-const unsigned char *&#160;</td><td class="memItemRight" valign="bottom"><b>data</b> (unsigned int x, unsigned int y, Channel channel) const </td></tr>
+<tr class="memitem:a2a845eb3075132fa28344afbd0e06c06"><td class="memItemLeft" align="right" valign="top">const unsigned char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_lib_1_1_image_r_g_b.html#a2a845eb3075132fa28344afbd0e06c06">data</a> (unsigned int x, unsigned int y, <a class="el" href="namespace_image_lib.html#a9a33be44253b1872f4c3244b758dc995">Channel</a> channel) const </td></tr>
 <tr class="separator:a2a845eb3075132fa28344afbd0e06c06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36580ec6b2e88325116db92529fdbdcd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_image_lib_1_1_rgb.html">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_lib_1_1_image_r_g_b.html#a36580ec6b2e88325116db92529fdbdcd">data</a> (unsigned int x, unsigned int y)</td></tr>
+<tr class="memitem:a36580ec6b2e88325116db92529fdbdcd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_image_lib_1_1_image_r_g_b.html#a86e3c917a684211d191b795805627d5a">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_lib_1_1_image_r_g_b.html#a36580ec6b2e88325116db92529fdbdcd">data</a> (unsigned int x, unsigned int y)</td></tr>
 <tr class="separator:a36580ec6b2e88325116db92529fdbdcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38692141a52d32673b15ece92565d642"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38692141a52d32673b15ece92565d642"></a>
-<a class="el" href="struct_image_lib_1_1_rgb.html">const_pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><b>data</b> (unsigned int x, unsigned int y) const </td></tr>
+<tr class="memitem:a38692141a52d32673b15ece92565d642"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_image_lib_1_1_image_r_g_b.html#afb593bd4c0e1b994da3a0e9ec305005b">const_pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_lib_1_1_image_r_g_b.html#a38692141a52d32673b15ece92565d642">data</a> (unsigned int x, unsigned int y) const </td></tr>
 <tr class="separator:a38692141a52d32673b15ece92565d642"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeef51cdf3754611afa7c284c13ba8914"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_image_lib_1_1_rgb.html">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_lib_1_1_image_r_g_b.html#aeef51cdf3754611afa7c284c13ba8914">at</a> (unsigned int x=0, unsigned int y=0)</td></tr>
+<tr class="memitem:aeef51cdf3754611afa7c284c13ba8914"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_image_lib_1_1_image_r_g_b.html#a18c96e6d77f5590d840934db5132eb9d">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_lib_1_1_image_r_g_b.html#aeef51cdf3754611afa7c284c13ba8914">at</a> (unsigned int x=0, unsigned int y=0)</td></tr>
 <tr class="separator:aeef51cdf3754611afa7c284c13ba8914"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0f028f2531f00549c65dbcc16565278"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae0f028f2531f00549c65dbcc16565278"></a>
-<a class="el" href="struct_image_lib_1_1_rgb.html">const_reference</a>&#160;</td><td class="memItemRight" valign="bottom"><b>at</b> (unsigned int x=0, unsigned int y=0) const </td></tr>
+<tr class="memitem:ae0f028f2531f00549c65dbcc16565278"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_image_lib_1_1_image_r_g_b.html#adfc42fd0ba651b42d780ccf63aa534d1">const_reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_lib_1_1_image_r_g_b.html#ae0f028f2531f00549c65dbcc16565278">at</a> (unsigned int x=0, unsigned int y=0) const </td></tr>
 <tr class="separator:ae0f028f2531f00549c65dbcc16565278"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17824af317f43343e88d47d7854d8b92"><td class="memItemLeft" align="right" valign="top">unsigned char &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_lib_1_1_image_r_g_b.html#a17824af317f43343e88d47d7854d8b92">at</a> (unsigned int x, unsigned int y, Channel channel)</td></tr>
+<tr class="memitem:a17824af317f43343e88d47d7854d8b92"><td class="memItemLeft" align="right" valign="top">unsigned char &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_lib_1_1_image_r_g_b.html#a17824af317f43343e88d47d7854d8b92">at</a> (unsigned int x, unsigned int y, <a class="el" href="namespace_image_lib.html#a9a33be44253b1872f4c3244b758dc995">Channel</a> channel)</td></tr>
 <tr class="separator:a17824af317f43343e88d47d7854d8b92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e7f562c0158188da7777e44772cbffa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e7f562c0158188da7777e44772cbffa"></a>
-unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>at</b> (unsigned int x, unsigned int y, Channel channel) const </td></tr>
-<tr class="separator:a1e7f562c0158188da7777e44772cbffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad871233a942d263ba2c8b6728103d706"><td class="memItemLeft" align="right" valign="top">const unsigned char &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_lib_1_1_image_r_g_b.html#ad871233a942d263ba2c8b6728103d706">at</a> (unsigned int x, unsigned int y, <a class="el" href="namespace_image_lib.html#a9a33be44253b1872f4c3244b758dc995">Channel</a> channel) const </td></tr>
+<tr class="separator:ad871233a942d263ba2c8b6728103d706"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_image_lib_1_1_image"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_image_lib_1_1_image')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_image_lib_1_1_image.html">ImageLib::Image</a></td></tr>
-<tr class="memitem:a0e6fd9396015ff805b9f5beb54adb162 inherit pub_methods_class_image_lib_1_1_image"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0e6fd9396015ff805b9f5beb54adb162"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>width</b> () const </td></tr>
+<tr class="memitem:a4f9ca29413e7299011becb21efe517e3 inherit pub_methods_class_image_lib_1_1_image"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_lib_1_1_image.html#a4f9ca29413e7299011becb21efe517e3">~Image</a> ()</td></tr>
+<tr class="separator:a4f9ca29413e7299011becb21efe517e3 inherit pub_methods_class_image_lib_1_1_image"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e6fd9396015ff805b9f5beb54adb162 inherit pub_methods_class_image_lib_1_1_image"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_lib_1_1_image.html#a0e6fd9396015ff805b9f5beb54adb162">width</a> () const </td></tr>
 <tr class="separator:a0e6fd9396015ff805b9f5beb54adb162 inherit pub_methods_class_image_lib_1_1_image"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27e5d47e79a4b4b09d1bb122f5e2dd0d inherit pub_methods_class_image_lib_1_1_image"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a27e5d47e79a4b4b09d1bb122f5e2dd0d"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>height</b> () const </td></tr>
+<tr class="memitem:a27e5d47e79a4b4b09d1bb122f5e2dd0d inherit pub_methods_class_image_lib_1_1_image"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_lib_1_1_image.html#a27e5d47e79a4b4b09d1bb122f5e2dd0d">height</a> () const </td></tr>
 <tr class="separator:a27e5d47e79a4b4b09d1bb122f5e2dd0d inherit pub_methods_class_image_lib_1_1_image"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8533693bac1a7195e34bc7931952e99f inherit pub_methods_class_image_lib_1_1_image"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8533693bac1a7195e34bc7931952e99f"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const </td></tr>
+<tr class="memitem:a8533693bac1a7195e34bc7931952e99f inherit pub_methods_class_image_lib_1_1_image"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_lib_1_1_image.html#a8533693bac1a7195e34bc7931952e99f">size</a> () const </td></tr>
 <tr class="separator:a8533693bac1a7195e34bc7931952e99f inherit pub_methods_class_image_lib_1_1_image"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e8e8e1630023b2d844f0b74eaaff913 inherit pub_methods_class_image_lib_1_1_image"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0e8e8e1630023b2d844f0b74eaaff913"></a>
-iterator&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> ()</td></tr>
+<tr class="memitem:a0e8e8e1630023b2d844f0b74eaaff913 inherit pub_methods_class_image_lib_1_1_image"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_image_lib_1_1_image.html#affcbe6719d6f374974e3014e571ad72f">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_lib_1_1_image.html#a0e8e8e1630023b2d844f0b74eaaff913">begin</a> ()</td></tr>
 <tr class="separator:a0e8e8e1630023b2d844f0b74eaaff913 inherit pub_methods_class_image_lib_1_1_image"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7325303893320d5e6f7b8f2d70947465 inherit pub_methods_class_image_lib_1_1_image"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7325303893320d5e6f7b8f2d70947465"></a>
-const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>cbegin</b> () const </td></tr>
+<tr class="memitem:a7325303893320d5e6f7b8f2d70947465 inherit pub_methods_class_image_lib_1_1_image"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_image_lib_1_1_image.html#a88c178d4a9c710ae54629312e41feb1b">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_lib_1_1_image.html#a7325303893320d5e6f7b8f2d70947465">cbegin</a> () const </td></tr>
 <tr class="separator:a7325303893320d5e6f7b8f2d70947465 inherit pub_methods_class_image_lib_1_1_image"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4847ba8a17f7aa75b1a513d72e293cd9 inherit pub_methods_class_image_lib_1_1_image"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4847ba8a17f7aa75b1a513d72e293cd9"></a>
-iterator&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> ()</td></tr>
+<tr class="memitem:a4847ba8a17f7aa75b1a513d72e293cd9 inherit pub_methods_class_image_lib_1_1_image"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_image_lib_1_1_image.html#affcbe6719d6f374974e3014e571ad72f">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_lib_1_1_image.html#a4847ba8a17f7aa75b1a513d72e293cd9">end</a> ()</td></tr>
 <tr class="separator:a4847ba8a17f7aa75b1a513d72e293cd9 inherit pub_methods_class_image_lib_1_1_image"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f83880aca0926e9884862ded91d9302 inherit pub_methods_class_image_lib_1_1_image"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f83880aca0926e9884862ded91d9302"></a>
-const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>cend</b> () const </td></tr>
+<tr class="memitem:a7f83880aca0926e9884862ded91d9302 inherit pub_methods_class_image_lib_1_1_image"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_image_lib_1_1_image.html#a88c178d4a9c710ae54629312e41feb1b">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_lib_1_1_image.html#a7f83880aca0926e9884862ded91d9302">cend</a> () const </td></tr>
 <tr class="separator:a7f83880aca0926e9884862ded91d9302 inherit pub_methods_class_image_lib_1_1_image"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_class_image_lib_1_1_image"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_image_lib_1_1_image')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_image_lib_1_1_image.html">ImageLib::Image</a></td></tr>
-<tr class="memitem:aed7e04d0a1e5d8a8b19a0140e08d2c8d inherit pro_methods_class_image_lib_1_1_image"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed7e04d0a1e5d8a8b19a0140e08d2c8d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Image</b> (unsigned int width, unsigned int height, int numChannels)</td></tr>
+<tr class="memitem:aed7e04d0a1e5d8a8b19a0140e08d2c8d inherit pro_methods_class_image_lib_1_1_image"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_lib_1_1_image.html#aed7e04d0a1e5d8a8b19a0140e08d2c8d">Image</a> (unsigned int <a class="el" href="class_image_lib_1_1_image.html#a0e6fd9396015ff805b9f5beb54adb162">width</a>, unsigned int <a class="el" href="class_image_lib_1_1_image.html#a27e5d47e79a4b4b09d1bb122f5e2dd0d">height</a>, int numChannels)</td></tr>
 <tr class="separator:aed7e04d0a1e5d8a8b19a0140e08d2c8d inherit pro_methods_class_image_lib_1_1_image"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24f9ab8cafb99a4753f72ec7ec09d49c inherit pro_methods_class_image_lib_1_1_image"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a24f9ab8cafb99a4753f72ec7ec09d49c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Image</b> (unsigned int width, unsigned int height, const std::vector&lt; unsigned char &gt; &amp;data)</td></tr>
+<tr class="memitem:a24f9ab8cafb99a4753f72ec7ec09d49c inherit pro_methods_class_image_lib_1_1_image"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_lib_1_1_image.html#a24f9ab8cafb99a4753f72ec7ec09d49c">Image</a> (unsigned int <a class="el" href="class_image_lib_1_1_image.html#a0e6fd9396015ff805b9f5beb54adb162">width</a>, unsigned int <a class="el" href="class_image_lib_1_1_image.html#a27e5d47e79a4b4b09d1bb122f5e2dd0d">height</a>, const std::vector&lt; unsigned char &gt; &amp;data)</td></tr>
 <tr class="separator:a24f9ab8cafb99a4753f72ec7ec09d49c inherit pro_methods_class_image_lib_1_1_image"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab08cf6f50e31a3fa2a39ebec6feeaeee inherit pro_methods_class_image_lib_1_1_image"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab08cf6f50e31a3fa2a39ebec6feeaeee"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Image</b> (unsigned int width, unsigned int height, int numChannels, const unsigned char *data)</td></tr>
+<tr class="memitem:ab08cf6f50e31a3fa2a39ebec6feeaeee inherit pro_methods_class_image_lib_1_1_image"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_lib_1_1_image.html#ab08cf6f50e31a3fa2a39ebec6feeaeee">Image</a> (unsigned int <a class="el" href="class_image_lib_1_1_image.html#a0e6fd9396015ff805b9f5beb54adb162">width</a>, unsigned int <a class="el" href="class_image_lib_1_1_image.html#a27e5d47e79a4b4b09d1bb122f5e2dd0d">height</a>, int numChannels, const unsigned char *data)</td></tr>
 <tr class="separator:ab08cf6f50e31a3fa2a39ebec6feeaeee inherit pro_methods_class_image_lib_1_1_image"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_image_lib_1_1_image"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_image_lib_1_1_image')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_image_lib_1_1_image.html">ImageLib::Image</a></td></tr>
-<tr class="memitem:a7d7fb30fedb6c4a8bacfe5170dad2d28 inherit pro_attribs_class_image_lib_1_1_image"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d7fb30fedb6c4a8bacfe5170dad2d28"></a>
-std::vector&lt; unsigned char &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>data_</b></td></tr>
+<tr class="memitem:a7d7fb30fedb6c4a8bacfe5170dad2d28 inherit pro_attribs_class_image_lib_1_1_image"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_lib_1_1_image.html#a7d7fb30fedb6c4a8bacfe5170dad2d28">data_</a></td></tr>
 <tr class="separator:a7d7fb30fedb6c4a8bacfe5170dad2d28 inherit pro_attribs_class_image_lib_1_1_image"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="afb593bd4c0e1b994da3a0e9ec305005b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef const <a class="el" href="struct_image_lib_1_1_rgb.html">Rgb</a>&lt;const unsigned char *&gt; <a class="el" href="class_image_lib_1_1_image_r_g_b.html#afb593bd4c0e1b994da3a0e9ec305005b">ImageLib::ImageRGB::const_pointer</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>const <a class="el" href="struct_image_lib_1_1_rgb.html">Rgb</a> struct containing const pointers to each channel </p>
+
+</div>
+</div>
+<a class="anchor" id="adfc42fd0ba651b42d780ccf63aa534d1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef const <a class="el" href="struct_image_lib_1_1_rgb.html">Rgb</a>&lt;const unsigned char &amp;&gt; <a class="el" href="class_image_lib_1_1_image_r_g_b.html#adfc42fd0ba651b42d780ccf63aa534d1">ImageLib::ImageRGB::const_reference</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>const <a class="el" href="struct_image_lib_1_1_rgb.html">Rgb</a> struct containing const references to each channel </p>
+
+</div>
+</div>
+<a class="anchor" id="a86e3c917a684211d191b795805627d5a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="struct_image_lib_1_1_rgb.html">Rgb</a>&lt;unsigned char *&gt; <a class="el" href="class_image_lib_1_1_image_r_g_b.html#a86e3c917a684211d191b795805627d5a">ImageLib::ImageRGB::pointer</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="el" href="struct_image_lib_1_1_rgb.html">Rgb</a> struct containing pointers to the channel </p>
+
+</div>
+</div>
+<a class="anchor" id="a18c96e6d77f5590d840934db5132eb9d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="struct_image_lib_1_1_rgb.html">Rgb</a>&lt;unsigned char &amp;&gt; <a class="el" href="class_image_lib_1_1_image_r_g_b.html#a18c96e6d77f5590d840934db5132eb9d">ImageLib::ImageRGB::reference</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="el" href="struct_image_lib_1_1_rgb.html">Rgb</a> struct containing references to each channel </p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a2dc4b11b7d6b593c9a4c6c9610ec2081"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ImageLib::ImageRGB::ImageRGB </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Create empty image </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>Width of the new image </td></tr>
+    <tr><td class="paramname">height</td><td>Height of the new image </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a014ccd9cf06cb923665e41ff351f07f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ImageLib::ImageRGB::ImageRGB </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; unsigned char &gt; &amp;&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Create new image containing the data in the vector </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>Width of the new image </td></tr>
+    <tr><td class="paramname">height</td><td>Height of the new image </td></tr>
+    <tr><td class="paramname">data</td><td>Data for new image </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a9d632670e1174bb0076db7fcf57f5299"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ImageLib::ImageRGB::ImageRGB </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Create new image containing the data in the </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>Width of the new image </td></tr>
+    <tr><td class="paramname">height</td><td>Height of the new image </td></tr>
+    <tr><td class="paramname">data</td><td>Data for new image </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="aeef51cdf3754611afa7c284c13ba8914"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_image_lib_1_1_rgb.html">ImageRGB::reference</a> ImageLib::ImageRGB::at </td>
+          <td class="memname"><a class="el" href="class_image_lib_1_1_image_r_g_b.html#a18c96e6d77f5590d840934db5132eb9d">ImageRGB::reference</a> ImageLib::ImageRGB::at </td>
           <td>(</td>
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>x</em> = <code>0</code>, </td>
@@ -241,6 +392,33 @@ std::vector&lt; unsigned char &gt;&#160;</td><td class="memItemRight" valign="bo
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get struct of references to pixel at (x,y) </p>
+
+</div>
+</div>
+<a class="anchor" id="ae0f028f2531f00549c65dbcc16565278"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_image_lib_1_1_image_r_g_b.html#adfc42fd0ba651b42d780ccf63aa534d1">ImageRGB::const_reference</a> ImageLib::ImageRGB::at </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>x</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>y</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -267,7 +445,7 @@ std::vector&lt; unsigned char &gt;&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Channel&#160;</td>
+          <td class="paramtype"><a class="el" href="namespace_image_lib.html#a9a33be44253b1872f4c3244b758dc995">Channel</a>&#160;</td>
           <td class="paramname"><em>channel</em>&#160;</td>
         </tr>
         <tr>
@@ -277,7 +455,66 @@ std::vector&lt; unsigned char &gt;&#160;</td><td class="memItemRight" valign="bo
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get reference to pixel at (x,y), in the given channel </p>
+<p>Get reference to pixel at (x,y), in the specified channel </p>
+
+</div>
+</div>
+<a class="anchor" id="ad871233a942d263ba2c8b6728103d706"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned char &amp; ImageLib::ImageRGB::at </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_image_lib.html#a9a33be44253b1872f4c3244b758dc995">Channel</a>&#160;</td>
+          <td class="paramname"><em>channel</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get const reference to pixel at (x,y), in the specified channel </p>
+
+</div>
+</div>
+<a class="anchor" id="ad233f91f2e4925ef07eb9a1a7783a1be"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ImageLib::ImageRGB::channels </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The amount of channels an image has </p>
+
+<p>Implements <a class="el" href="class_image_lib_1_1_image.html#a66e3fcb6ef987ca9ad13940e9373e1b8">ImageLib::Image</a>.</p>
 
 </div>
 </div>
@@ -300,7 +537,7 @@ std::vector&lt; unsigned char &gt;&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Channel&#160;</td>
+          <td class="paramtype"><a class="el" href="namespace_image_lib.html#a9a33be44253b1872f4c3244b758dc995">Channel</a>&#160;</td>
           <td class="paramname"><em>channel</em>&#160;</td>
         </tr>
         <tr>
@@ -310,7 +547,40 @@ std::vector&lt; unsigned char &gt;&#160;</td><td class="memItemRight" valign="bo
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get Pointer to pixel at (x,y) in the given channel </p>
+<p>Get pointer to pixel at (x,y) in specified channel </p>
+
+</div>
+</div>
+<a class="anchor" id="a2a845eb3075132fa28344afbd0e06c06"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned char * ImageLib::ImageRGB::data </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_image_lib.html#a9a33be44253b1872f4c3244b758dc995">Channel</a>&#160;</td>
+          <td class="paramname"><em>channel</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get const pointer to pixel at (x,y) in specified channel </p>
 
 </div>
 </div>
@@ -319,7 +589,7 @@ std::vector&lt; unsigned char &gt;&#160;</td><td class="memItemRight" valign="bo
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_image_lib_1_1_rgb.html">ImageRGB::pointer</a> ImageLib::ImageRGB::data </td>
+          <td class="memname"><a class="el" href="class_image_lib_1_1_image_r_g_b.html#a86e3c917a684211d191b795805627d5a">ImageRGB::pointer</a> ImageLib::ImageRGB::data </td>
           <td>(</td>
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>x</em>, </td>
@@ -342,17 +612,45 @@ std::vector&lt; unsigned char &gt;&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
+<a class="anchor" id="a38692141a52d32673b15ece92565d642"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_image_lib_1_1_image_r_g_b.html#afb593bd4c0e1b994da3a0e9ec305005b">ImageRGB::const_pointer</a> ImageLib::ImageRGB::data </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get struct of const pointers to each channel at (x, y) </p>
+<dl class="section return"><dt>Returns</dt><dd>[red *, green *, blue *] </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_image_r_g_b_8h_source.html">ImageRGB.h</a></li>
-<li>ImageRGB.cpp</li>
+<li><a class="el" href="_image_r_g_b_8cpp.html">ImageRGB.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>ImageLib</b></li><li class="navelem"><a class="el" href="class_image_lib_1_1_image_r_g_b.html">ImageRGB</a></li>
-    <li class="footer">Generated on Fri Mar 21 2014 02:04:59 for ImageLib by
+    <li class="navelem"><a class="el" href="namespace_image_lib.html">ImageLib</a></li><li class="navelem"><a class="el" href="class_image_lib_1_1_image_r_g_b.html">ImageRGB</a></li>
+    <li class="footer">Generated on Thu Apr 3 2014 14:13:02 for ImageLib by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>
