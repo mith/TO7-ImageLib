@@ -80,12 +80,12 @@ namespace ImageLib
 		Get struct of pointers to each channel at (x, y)
 		@return [red *, green *, blue *]
 		*/
-		pointer data(unsigned int x, unsigned int y);
+		pointer data(unsigned int x = 0, unsigned int y = 0);
 		/**
 		Get struct of const pointers to each channel at (x, y)
 		@return [red *, green *, blue *]
 		*/
-		const_pointer data(unsigned int x, unsigned int y) const;
+		const_pointer data(unsigned int x = 0, unsigned int y = 0) const;
 
 		/**
 		Get struct of references to pixel at (x,y)
@@ -107,24 +107,8 @@ namespace ImageLib
 	};
 
 	/**
-	@example ImageRGB.h
+	@example Examples.cpp
 
-	std::unique_ptr<ImageRGB> img = loadImg("example.jpg");
 
-	// various ways to set pixel in fifth column, second row, red channel to 255
-
-	img->at(5, 2, Channel::Red) = 255;
-
-	// or
-
-	img->at(5, 2).red = 255;
-
-	// or with pointers
-
-	*(img->data(5, 2).red) = 255;
-
-	// or
-
-	*img->data(5, 2, Channel::Red) = 255;
 	*/
 }

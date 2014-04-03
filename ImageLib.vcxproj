@@ -79,6 +79,7 @@
     <ClInclude Include="ImageRGB.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="examples\Examples.cpp" />
     <ClCompile Include="Image.cpp" />
     <ClCompile Include="ImageGray.cpp" />
     <ClCompile Include="ImageLoader.cpp" />

@@ -9,7 +9,7 @@ namespace ImageLib
 	}
 
 	ImageRGB::ImageRGB(unsigned int width, unsigned int height, const std::vector<unsigned char> & data)
-		: Image(width, height, data), channelsize(width * height)
+		: Image(width, height, 3, data), channelsize(width * height)
 	{
 
 	}

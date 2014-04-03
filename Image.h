@@ -12,7 +12,7 @@ namespace ImageLib
 	protected:
 		std::vector<unsigned char> data_;
 		Image(unsigned int width, unsigned int height, int numChannels);
-		Image(unsigned int width, unsigned int height, const std::vector<unsigned char> & data);
+		Image(unsigned int width, unsigned int height, int numChannels, const std::vector<unsigned char> & data);
 		Image(unsigned int width, unsigned int height, int numChannels, const unsigned char * data);
 
 	public:
@@ -39,10 +39,22 @@ namespace ImageLib
 		*/
 		virtual int channels() const = 0;
 
+		/**
+		Returns an iterator to the beginning
+		*/
 		iterator begin() { return data_.begin(); }
+		/**
+		Returns a const iterator to the beginning
+		*/
 		const_iterator cbegin() const { return data_.cbegin(); }
 
+		/**
+		Returns an iterator to the end
+		*/
 		iterator end() { return data_.end(); }
+		/**
+		Returns a const iterator to the end
+		*/
 		const_iterator cend() const { return data_.cend(); }
 	};
 }

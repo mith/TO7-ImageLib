@@ -9,7 +9,7 @@ namespace ImageLib
 	}
 
 	ImageGray::ImageGray(unsigned int width, unsigned int height, const std::vector<unsigned char> & data)
-		: Image(width, height, data)
+		: Image(width, height, 1, data)
 	{
 
 	}
