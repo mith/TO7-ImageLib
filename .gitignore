@@ -197,3 +197,5 @@ FakesAssemblies/
 
 # Github pages dir
 html/
+
+*.nupkg
