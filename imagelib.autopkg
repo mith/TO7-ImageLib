@@ -1,7 +1,7 @@
 nuget {
     nuspec {
         id = imagelib;
-        version : 0.4;
+        version : 0.5;
         title: THO7 ImageLib;
         authors: Simon Voordouw;
         owners: Simon Voordouw;

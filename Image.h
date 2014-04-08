@@ -46,6 +46,7 @@ namespace ImageLib
 		/**
 		Returns a const iterator to the beginning
 		*/
+		const_iterator begin() const { return data_.begin(); }
 		const_iterator cbegin() const { return data_.cbegin(); }
 
 		/**
@@ -55,6 +56,7 @@ namespace ImageLib
 		/**
 		Returns a const iterator to the end
 		*/
+		const_iterator end() const { return data_.end(); }
 		const_iterator cend() const { return data_.cend(); }
 	};
 }
