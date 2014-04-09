@@ -1,7 +1,7 @@
 nuget {
     nuspec {
         id = imagelib;
-        version : 0.5;
+        version : 0.7;
         title: THO7 ImageLib;
         authors: Simon Voordouw;
         owners: Simon Voordouw;
@@ -9,7 +9,7 @@ nuget {
         summary: "Themopdracht 7 image library";
 
         description: "Themopdracht 7 image library";
-        releaseNotes: "";
+        releaseNotes: "Image loading constructors";
         copyright: Copyright 2013;
         tags: {};
     };
@@ -17,12 +17,20 @@ nuget {
     files {
         include: { "*.h" };
 
-        [x64,release] {  // x64, release
+        [x64,release] {
             lib: { "x64/Release/ImageLib.lib", "lib/*" };
         }
 
-        [x64,debug] {  // x64, release
+        [x64,debug] {
             lib: { "x64/Debug/ImageLib.lib", "lib/*" };
+        }
+
+        [win32,release] {
+            lib: { "win32/Release/ImageLib.lib", "lib/win32/*" };
+        }
+
+        [win32,debug] {
+            lib: { "win32/Debug/ImageLib.lib", "/lib/win32/*" };
         }
     }
 }

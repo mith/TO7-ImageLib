@@ -1,5 +1,6 @@
 #include "ImageGray.h"
 
+
 namespace ImageLib
 {
 	ImageGray::ImageGray(unsigned int width, unsigned int height)
@@ -18,6 +19,10 @@ namespace ImageLib
 		: Image(width, height, 1, data)
 	{
 
+	}
+
+	ImageGray::ImageGray(std::string filename) : Image(filename, 1)
+	{
 	}
 
 	unsigned char * ImageGray::data(unsigned int x, unsigned int y)

@@ -20,6 +20,10 @@ namespace ImageLib
 
 	}
 
+	ImageRGB::ImageRGB(std::string filename) : Image(filename, 3) 
+	{
+	}
+
 	unsigned char * ImageRGB::data(unsigned int x, unsigned int y, Channel channel)
 	{
 		return data_.data() + x + (y * width()) + ((int)channel * channelsize);

@@ -1,20 +1,21 @@
 #pragma once
 #include <vector>
 #include <array>
+#include <string>
 
 namespace ImageLib 
 {
 	class Image
 	{
 	private:
-		const unsigned int width_;
-		const unsigned int height_;
+		unsigned int width_;
+		unsigned int height_;
 	protected:
 		std::vector<unsigned char> data_;
 		Image(unsigned int width, unsigned int height, int numChannels);
 		Image(unsigned int width, unsigned int height, int numChannels, const std::vector<unsigned char> & data);
 		Image(unsigned int width, unsigned int height, int numChannels, const unsigned char * data);
-
+		Image(std::string filename, int channels);
 	public:
 		virtual ~Image() {};
 

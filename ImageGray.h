@@ -27,6 +27,10 @@ namespace ImageLib
 		*/
 		ImageGray(unsigned int width, unsigned int height, const unsigned char * data);
 
+
+		ImageGray(std::string filename);
+
+
 		int channels() const { return 1; }
 
 		/**

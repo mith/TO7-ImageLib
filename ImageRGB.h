@@ -47,6 +47,8 @@ namespace ImageLib
 		*/
 		ImageRGB(unsigned int width, unsigned int height, const unsigned char * data);
 
+		ImageRGB(std::string filename);
+
 		/**
 		Rgb struct containing references to each channel
 		*/
